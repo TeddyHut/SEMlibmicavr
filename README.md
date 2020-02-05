@@ -15,7 +15,11 @@ The SEM comes from its use in the SEM project.
 SEMlibmicavr is intended to be used as a submodule in a project containing [libmodule].
 - [ ] See SEMbms as an example.
 
-Ensure that `timerhardware.h` is in the include search path for your project, as it is used by [libmodule].\
-`timerhardware.cpp` and `generalhardware.cpp` will need to be added as source files to your project.
+#### Dependencies
+SEMlibmodule/src/ must be in the include search path for libmicavr to work.
+
+#### Integration
+[SEMlibmodule][libmodule] requires that `timerhardware.h` is in the include search path.\
+`timerhardware.cpp` and `generalhardware.cpp` will need to be added as source files to the project.
 
 [libmodule]: https://github.com/TeddyHut/SEMlibmodule
